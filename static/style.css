@@ -1,0 +1,68 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Corpo */
+body {
+    background: linear-gradient(to right, #007bff, #6610f2);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Container */
+.container {
+    width: 100%;
+    max-width: 400px;
+}
+
+/* Telas de Cadastro */
+.container {
+    background: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+/* Inputs */
+input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Botão */
+button {
+    background: #007bff;
+    color: white;
+    font-size: 18px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+}
+
+button:hover {
+    background: #0056b3;
+}
+
+/* Links */
+a {
+    text-decoration: none;
+    color: #007bff;
+    display: block;
+    margin-top: 10px;
+}
+
+a:hover {
+    text-decoration: underline;
+}
