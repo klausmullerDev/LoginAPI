@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Redefinir Senha</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h3>Redefinir Senha</h3>
+        <form id="resetPasswordForm">
+            <input type="text" id="resetToken" placeholder="Token" required>
+            <input type="password" id="newPassword" placeholder="Nova Senha" required>
+            <button type="submit">Redefinir</button>
+        </form>
+        <p><a href="/">Voltar ao Login</a></p>
+    </div>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>

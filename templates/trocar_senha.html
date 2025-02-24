@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Trocar Senha</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h3>Trocar Senha</h3>
+        <form id="changePasswordForm">
+            <input type="password" id="oldPassword" placeholder="Senha Atual" required>
+            <input type="password" id="newPassword" placeholder="Nova Senha" required>
+            <button type="submit">Trocar Senha</button>
+        </form>
+        <p><a href="/bemvindo">Voltar</a></p>
+    </div>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>

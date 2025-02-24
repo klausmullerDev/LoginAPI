@@ -26,6 +26,17 @@ def bemvindo():
 def cadastro():
     return render_template("cadastro.html")
 
+@app.route("/trocar_senha")
+def trocar_senha():
+    return render_template("trocar_senha.html")
+
+@app.route("/esqueci_senha")
+def esqueci_senha():
+    return render_template("esqueci_senha.html")
+
+@app.route("/redefinir_senha")
+def redefinir_senha():
+    return render_template("redefinir_senha.html")
 
 if __name__ == "__main__":
     with app.app_context():

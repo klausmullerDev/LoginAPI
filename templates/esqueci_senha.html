@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Esqueci a Senha</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h3>Esqueci a Senha</h3>
+        <form id="forgotPasswordForm">
+            <input type="email" id="email" placeholder="E-mail" required>
+            <button type="submit">Enviar Link</button>
+        </form>
+        <p><a href="/">Voltar ao Login</a></p>
+    </div>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>

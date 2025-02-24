@@ -7,5 +7,4 @@ routes_bp = Blueprint("routes", __name__)
 @jwt_required()
 def dados_protegidos():
     current_user = get_jwt_identity()
-    return jsonify({"mensagem": f"Bem-vindo, {current_user}!"})
-
+    return jsonify({"username": current_user})
